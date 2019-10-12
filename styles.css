@@ -1,0 +1,84 @@
+/* body {
+    background-image: url('images/52al08o97dm21.jpg');
+
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 2em;
+} */
+.header {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 1000;
+    font-size: xx-large;
+    color: #00c9e8;
+    outline-color: #002727;
+    padding-top: 0.5em;
+
+    text-align: center;
+}
+
+.main-section {
+    padding-left: 60px;
+    padding-top: 30px;
+    padding-right: 30px;
+
+}
+
+.user-input {
+    padding-left: 12em;
+    padding-top: 3em;
+    padding-right: 10em;
+}
+
+.site-card {
+    display: inline-block;
+    width: 12em;
+    height: 3.5em;
+    text-align: center;
+    align-content: center;
+    align-self: center;
+    align-items: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-color: #002727;
+
+
+    background-color: #00c9e8;
+
+    /* 2ad0c7 */
+    background-size: cover;
+    border-radius: 10px;
+
+
+    margin: 5px 5px;
+
+
+}
+
+.site-card-href {
+    text-decoration: none;
+    color: #002727;
+    font-size: large;
+    text-align: center;
+
+}
+
+.site-card-href:hover {
+    color: #e2ffff;
+    text-decoration: none;
+
+}
+
+.website-input {
+    padding-top: 4em;
+    padding-bottom: 2em;
+}
+
+.main-body {
+    color: rgb(218, 215, 210);
+    background-color: rgb(24, 26, 27);
+}
