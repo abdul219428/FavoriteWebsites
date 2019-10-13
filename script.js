@@ -146,8 +146,6 @@ const websites = [{
 ]
 
 let siteCard = document.querySelector(".site-card");
-// let siteCardHref = document.querySelector("site-card-href")
-
 
 function createWebsiteCards() {
     websites.forEach(site => {
@@ -194,8 +192,6 @@ function createSingleWebsiteCard() {
 
 
 }
-
-
 
 let urlInput = document.querySelector('#txtUrlName');
 let websiteName = document.querySelector('#txtWebsiteName')
