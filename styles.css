@@ -12,7 +12,7 @@
     padding: 0 2em;
 } */
 .header {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'PT Sans', sans-serif;
     font-weight: 1000;
     font-size: xx-large;
     color: #00c9e8;
@@ -35,6 +35,21 @@
     padding-right: 10em;
 }
 
+
+
+
+
+
+.shadow40 {
+    text-shadow: 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black;
+    color: #00c9e8;
+
+
+
+
+
+}
+
 .site-card {
     display: inline-block;
     width: 12em;
@@ -46,8 +61,10 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     border-color: #002727;
 
+    border: 1px solid cyan;
+    outline: 1px rgb(15, 95, 119);
 
-    background-color: #00c9e8;
+    background-color: '#ffffff00';
 
     /* 2ad0c7 */
     background-size: cover;
@@ -61,21 +78,25 @@
 
 .site-card-href {
     text-decoration: none;
-    color: #002727;
+    opacity: 1;
+    filter: brightness(200%);
     font-size: large;
     text-align: center;
+    background-color: #00c9e8;
+    color: #00c9e8;
+
+
 
 }
 
-.site-card-href:hover {
-    color: #e2ffff;
-    text-decoration: none;
 
-}
+
+
 
 .website-input {
     padding-top: 4em;
     padding-bottom: 2em;
+
 }
 
 .main-body {

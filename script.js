@@ -140,13 +140,18 @@ function createWebsiteCards() {
         let siteCard = document.createElement("div");
         let mainSection = document.querySelector(".main-section");
         siteCard.setAttribute('class', 'site-card col-md-3.6 col-xs-3.6 col-sm-3.6 ');
+
+        backgroundColor = '#ffffff00';
         mainSection.appendChild(siteCard);
         let siteCardHref = document.createElement("a");
         siteCardHref.setAttribute('class', 'site-card-href');
         siteCardHref.setAttribute('target', '_blank');
+
+        siteCardHref.className = 'shadow40';
         siteCard.appendChild(siteCardHref);
         siteCardHref.setAttribute('href', site.url);
         siteCardHref.innerText = site.websiteName;
+        siteCardHref.style.textDecoration = 'none';
 
 
     })
@@ -157,15 +162,27 @@ function createSingleWebsiteCard() {
     let newWebsiteCard = websites.slice(-1)[0];
     let siteCard = document.createElement("div");
     let mainSection = document.querySelector(".main-section");
-    siteCard.setAttribute('class', 'site-card col-md-3.6 col-xs-3.6 col-sm-3.6 ');
+    siteCard.setAttribute('class', 'site-card shadow40 col-md-3.6 col-xs-3.6 col-sm-3.6 ');
+
     mainSection.appendChild(siteCard);
     let siteCardHref = document.createElement("a");
-    siteCardHref.setAttribute('class', 'site-card-href');
+    siteCardHref.setAttribute('class', 'site-card-href  ');
     siteCardHref.setAttribute('target', '_blank');
+    siteCardHref.className = 'shadow40';
+
     siteCard.appendChild(siteCardHref);
     siteCardHref.setAttribute('href', newWebsiteCard.url);
     siteCardHref.innerText = newWebsiteCard.websiteName;
+
 }
+
+// function get_random_color2() {
+//     var r = function () {
+//         return Math.floor(Math.random() * 256)
+//     };
+//     var a = 1;
+//     return "rgb(" + r() + "," + r() + "," + r() + "," + a + ")";
+// }
 
 let urlInput = document.querySelector('#urlName');
 let websiteName = document.querySelector('#websiteName')
@@ -190,3 +207,33 @@ function addWebsite() {
 
 
 }
+
+// function LightenDarkenColor(col, amt) {
+
+//     var usePound = false;
+
+//     if (col[0] == "#") {
+//         col = col.slice(1);
+//         usePound = true;
+//     }
+
+//     var num = parseInt(col, 16);
+
+//     var r = (num >> 16) + amt;
+
+//     if (r > 255) r = 255;
+//     else if (r < 0) r = 0;
+
+//     var b = ((num >> 8) & 0x00FF) + amt;
+
+//     if (b > 255) b = 255;
+//     else if (b < 0) b = 0;
+
+//     var g = (num & 0x0000FF) + amt;
+
+//     if (g > 255) g = 255;
+//     else if (g < 0) g = 0;
+
+//     return (usePound ? "#" : "") + (g | (b << 8) | (r << 16)).toString(16);
+
+// }
