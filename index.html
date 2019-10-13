@@ -13,44 +13,38 @@
       href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap"
       rel="stylesheet"
     />
-    <title>Favorite Websites</title>
+    <title>Smart Bookmarker</title>
   </head>
 
   <div class="header">
-    <strong>My Favorite Websites</strong>
+    <strong>Smart Bookmarker</strong>
   </div>
 
   <body class="main-body">
-    <div class="container">
-      <div class="website-input">
-        <div class="input-group mb-2 ">
-          <input
-            type="text"
-            class="form-control text-info bg-dark btn-outline-info "
-            placeholder="Website's address"
-            aria-label="Recipient's username"
-            aria-describedby="basic-addon2"
-            id="urlName"
-          />
+    <div class="flexbox-container">
+      <div class="website-input ">
+        <form class="form-inline input-form">
+          <input type="text" class="form-control mb-2 mr-sm-2 text-info bg-dark
+          btn-outline-info" id="txtUrlName"" placeholder="Website's address" />
 
           <input
             type="text"
-            class="form-control text-info bg-dark btn-outline-info"
-            placeholder="Website's Name"
-            aria-label="Website's Name"
-            aria-describedby="basic-addon2"
-            id="websiteName"
+            class="form-control text-info bg-dark btn-outline-info mb-2 mr-sm-2"
+            id="txtWebsiteName"
+            placeholder="Website Name"
           />
 
-          <div class="input-group-append">
-            <button class="btn btn-outline-info" type="button" id="addUrl">
-              Add
-            </button>
-          </div>
-        </div>
+          <button
+            type="button"
+            id="btnAddUrl"
+            class="form-control btn btn-outline-info mb-2 mr-sm-2"
+          >
+            Add
+          </button>
+        </form>
       </div>
 
-      <div class="main-section row"></div>
+      <div class="main-section "></div>
     </div>
   </body>
   <script src="script.js"></script>

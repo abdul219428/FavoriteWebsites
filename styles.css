@@ -19,22 +19,104 @@
     outline-color: #002727;
     padding-top: 0.5em;
 
+
     text-align: center;
 }
 
+.flexbox-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    position: absolute;
+    width: 100%;
+
+
+}
+
 .main-section {
-    padding-left: 60px;
+
     padding-top: 30px;
-    padding-right: 30px;
+
+
+
 
 }
 
-.user-input {
-    padding-left: 12em;
-    padding-top: 3em;
-    padding-right: 10em;
+.website-input {
+    padding-left: 2em;
+    padding-top: 4em;
+    padding-right: 2em;
+    flex-flow: wrap;
+    flex-shrink: inherit;
+    flex: content;
+    align-content: center;
+    align-self: center;
+    flex-grow: 1;
+
+    display: flex;
+
+
+
 }
 
+.input-form {
+    flex-flow: wrap;
+    flex-shrink: inherit;
+    flex: content;
+    align-content: center;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+
+
+
+}
+
+#txtUrlName {
+    flex-flow: wrap;
+    flex-shrink: inherit;
+
+    align-content: center;
+    align-self: center;
+    min-width: 1rem;
+    margin-left: 2em;
+    margin-right: 2em;
+
+
+
+
+
+}
+
+#txtWebsiteName {
+    flex-flow: wrap;
+    flex-shrink: inherit;
+
+    align-content: center;
+    align-self: center;
+
+    min-width: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+
+}
+
+#btnAddUrl {
+    flex-flow: wrap;
+
+
+    align-content: center;
+    align-self: center;
+
+
+    margin-left: 2rem;
+    margin-right: 2rem;
+
+
+
+}
 
 
 
@@ -52,54 +134,51 @@
 
 .site-card {
     display: inline-block;
-    width: 12em;
-    height: 3.5em;
+    /* width: 12em;
+    height: 3.5em; */
     text-align: center;
     align-content: center;
     align-self: center;
     align-items: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     border-color: #002727;
-
     border: 1px solid cyan;
     outline: 1px rgb(15, 95, 119);
-
     background-color: '#ffffff00';
-
-    /* 2ad0c7 */
     background-size: cover;
     border-radius: 10px;
-
-
-    margin: 5px 5px;
+    margin: 10px 10px;
+    flex-flow: wrap;
+    flex-shrink: inherit;
+    flex: content;
+    align-content: center;
+    padding: 5px 5px;
 
 
 }
+
 
 .site-card-href {
-    text-decoration: none;
-    opacity: 1;
-    filter: brightness(200%);
-    font-size: large;
-    text-align: center;
-    background-color: #00c9e8;
+    background-color: transparent;
+    /* text-shadow: 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black; */
     color: #00c9e8;
+    font-family: 'PT Sans', sans-serif;
 
+}
 
-
+.site-card-href:hover {
+    color: white;
 }
 
 
 
 
 
-.website-input {
-    padding-top: 4em;
-    padding-bottom: 2em;
 
-}
 
 .main-body {
-    color: rgb(218, 215, 210);
+
     background-color: rgb(24, 26, 27);
+    width: 100%;
+
 }

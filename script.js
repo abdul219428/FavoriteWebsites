@@ -1,3 +1,17 @@
+// TODO
+//? Add tags field in data model
+//? organize the cards by tags
+//* Search by tags
+//* Search by name
+//? implement the data model on local storage
+//! ability to drag the cards to Today's plan list box
+//? create a  todo list and drag the cards into it
+//! timeline like interface for cards in the order of basic to advanced
+//? a section for most clicked/visited cards
+//! a remind me to visit this card tomorrow
+
+
+
 const websites = [{
         url: 'http://codingheroes.io/resources/',
         websiteName: 'Web Dev Resources'
@@ -147,7 +161,8 @@ function createWebsiteCards() {
         siteCardHref.setAttribute('class', 'site-card-href');
         siteCardHref.setAttribute('target', '_blank');
 
-        siteCardHref.className = 'shadow40';
+        // siteCardHref.className = 'shadow40 site-card-href';
+
         siteCard.appendChild(siteCardHref);
         siteCardHref.setAttribute('href', site.url);
         siteCardHref.innerText = site.websiteName;
@@ -157,37 +172,35 @@ function createWebsiteCards() {
     })
 
 }
-
+// creates a new div element
 function createSingleWebsiteCard() {
+    // to get the latest added website url and name
     let newWebsiteCard = websites.slice(-1)[0];
+    // create new div element for holding the website url and name
     let siteCard = document.createElement("div");
     let mainSection = document.querySelector(".main-section");
-    siteCard.setAttribute('class', 'site-card shadow40 col-md-3.6 col-xs-3.6 col-sm-3.6 ');
-
+    siteCard.setAttribute('class', 'site-card');
+    // add the newly created site card to main section
     mainSection.appendChild(siteCard);
     let siteCardHref = document.createElement("a");
-    siteCardHref.setAttribute('class', 'site-card-href  ');
+    siteCardHref.setAttribute('class', 'site-card-href');
     siteCardHref.setAttribute('target', '_blank');
-    siteCardHref.className = 'shadow40';
+    // siteCardHref.className = 'shadow40';
 
     siteCard.appendChild(siteCardHref);
     siteCardHref.setAttribute('href', newWebsiteCard.url);
     siteCardHref.innerText = newWebsiteCard.websiteName;
+    siteCardHref.style.textDecoration = 'none';
+
 
 }
 
-// function get_random_color2() {
-//     var r = function () {
-//         return Math.floor(Math.random() * 256)
-//     };
-//     var a = 1;
-//     return "rgb(" + r() + "," + r() + "," + r() + "," + a + ")";
-// }
 
-let urlInput = document.querySelector('#urlName');
-let websiteName = document.querySelector('#websiteName')
 
-let addUrl = document.querySelector('#addUrl');
+let urlInput = document.querySelector('#txtUrlName');
+let websiteName = document.querySelector('#txtWebsiteName')
+
+let addUrl = document.querySelector('#btnAddUrl');
 addUrl.addEventListener('click', addWebsite);
 createWebsiteCards();
 
@@ -207,33 +220,3 @@ function addWebsite() {
 
 
 }
-
-// function LightenDarkenColor(col, amt) {
-
-//     var usePound = false;
-
-//     if (col[0] == "#") {
-//         col = col.slice(1);
-//         usePound = true;
-//     }
-
-//     var num = parseInt(col, 16);
-
-//     var r = (num >> 16) + amt;
-
-//     if (r > 255) r = 255;
-//     else if (r < 0) r = 0;
-
-//     var b = ((num >> 8) & 0x00FF) + amt;
-
-//     if (b > 255) b = 255;
-//     else if (b < 0) b = 0;
-
-//     var g = (num & 0x0000FF) + amt;
-
-//     if (g > 255) g = 255;
-//     else if (g < 0) g = 0;
-
-//     return (usePound ? "#" : "") + (g | (b << 8) | (r << 16)).toString(16);
-
-// }
